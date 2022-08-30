@@ -65,40 +65,40 @@ public interface IComparer
 - 관계 연산자 재정의
   - C#은 표준 관계 연산자를 오버로딩할 수 있으므로 구체적으로 타입을 취하는 CompareTo() Method를 사용하여 `오버로딩`하는 것이 좋다.
 
+   - 기본 관계 연산자 오버로딩 예제.
+     ```csharp
+     public struct Customer :       IComarable<Customer>, IComparable
+     {
+         private readonly string name;
+         public Customer(string name) {
+             this.name = name;
+         }
+     
+         // IComparable<Customer> 멤버
+         public int CompareTo(Customer   other) => name.CompareTo(other.  name);
+     
+         // IComparable 멤버
+         int IComparable.CompareTo(object   obj) {
+     
+             if (!(obj is Customer))
+     
+                 throw new   ArgumentException  ("Argument is not a   Customer", "obj");
+     
+             Customer otherCustomer =   (Customer)obj;
+     
+             return this.CompareTo  (otherCustomer);
+     
+         }
+     
+        // 관계 연산자
+        public static bool operator <  (Customer left, Customer right) =>   left.CompareTo(right) < 0;
+        public static bool operator <=  (Customer left, Customer right) =>   left.CompareTo(right) <= 0;
+        public static bool operator >  (Customer left, Customer right) =>   left.CompareTo(right) > 0;
+        public static bool operator >=  (Customer left, Customer right) =>   left.CompareTo(right) >= 0;
+     
+     }
+     ```
 
-  ```csharp
-  public struct Customer :   IComarable<Customer>, IComparable
-  {
-      private readonly string name;
-      public Customer(string name) {
-          this.name = name;
-      }
-  
-      // IComparable<Customer> 멤버
-      public int CompareTo(Customer other) => name.CompareTo(other.name);
-  
-      // IComparable 멤버
-      int IComparable.CompareTo(object obj) {
-  
-          if (!(obj is Customer))
-  
-              throw new ArgumentException("Argument is not a Customer", "obj");
-  
-          Customer otherCustomer = (Customer)obj;
-  
-          return this.CompareTo(otherCustomer);
-  
-      }
-  
-     // 관계 연산자
-     public static bool operator <(Customer left, Customer right) => left.CompareTo(right) < 0;
-     public static bool operator <=(Customer left, Customer right) => left.CompareTo(right) <= 0;
-     public static bool operator >(Customer left, Customer right) => left.CompareTo(right) > 0;
-     public static bool operator >=(Customer left, Customer right) => left.CompareTo(right) >= 0;
-  
-  }
-  ```
-  
 ## ✅ Custom 선후 관계 연산자 정의
 
 > 💡 delegate int Comparison<T> 
