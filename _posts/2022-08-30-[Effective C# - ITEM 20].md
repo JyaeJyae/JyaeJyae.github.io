@@ -22,6 +22,7 @@ tags: [c#]
       int CompareTo(object obj);
   }
   ```
+  
   ```csharp
     public struct Customer :IComparable<Customer>,IComparable
     {
