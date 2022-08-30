@@ -22,7 +22,7 @@ tags: [c#]
       int CompareTo(object obj);
   }
   ```
-  
+
   ```csharp
     public struct Customer :IComparable<Customer>,IComparable
     {
@@ -64,6 +64,8 @@ public interface IComparer
 ```
 - 관계 연산자 재정의
   - C#은 표준 관계 연산자를 오버로딩할 수 있으므로 구체적으로 타입을 취하는 CompareTo() Method를 사용하여 `오버로딩`하는 것이 좋다.
+
+
   ```csharp
   public struct Customer :   IComarable<Customer>, IComparable
   {
@@ -96,6 +98,7 @@ public interface IComparer
   
   }
   ```
+  
 ## ✅ Custom 선후 관계 연산자 정의
 
 > 💡 delegate int Comparison<T> 
