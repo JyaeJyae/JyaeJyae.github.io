@@ -23,6 +23,16 @@ layout: page
   {% assign pinned_num = 0 %}
 {% endif %}
 
+<!-- Total post size -->
+{% for category in site.categories %}
+{% assign category_name = category | first %}
+{% assign many = site.categories[category_name] | size %}
+{% assign total = total | plus: many %}
+{% if forloop.last %}
+<h1>Total ({{ total }})</h1>
+{% endif %}
+{% endfor %}
+
 <!-- Get default posts -->
 
 {% assign default_beg = offset | minus: pinned.size %}
@@ -43,9 +53,12 @@ layout: page
 <div id="post-list">
 
 {% for post in posts %}
-
+  {% assign many = post.categories | size %}
+  {% assign last = many | minus: 1 %}
+  {% capture _category_url %}/categories/{{ post.categories[last] | slugify | url_encode }}/{% endcapture %}
   <div class="post-preview">
     <h1>
+      <a href="{{ _category_url | relative_url }}"><span style="color:rgb(218, 139, 139);">{{ post.categories[last] }} › </span></a>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h1>
 

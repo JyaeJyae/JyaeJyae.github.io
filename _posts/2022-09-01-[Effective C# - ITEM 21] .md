@@ -1,6 +1,6 @@
 ---
 title: EFC# ITEM 21. 타입 매개변수가 IDisposable을 구현한 경우를 대비하여 제네릭 클래스를 작성하라.
-date: 2022-08-30 19:54:55 +0900
+date: 2022-09-01 19:54:55 +0900
 categories: [Effective C#]
 tags: [c#]
 ---
