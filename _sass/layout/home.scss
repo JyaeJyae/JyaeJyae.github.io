@@ -58,60 +58,78 @@
   padding-right: 0.5rem;
 
   .post-preview {
+    display: table;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--main-border-color);
 
-    a:hover {
-      @extend %link-hover;
-    }
+    .post-info{
+      display: table-cell;
+      position: relative;
+      padding-right: 35px;
 
-    h1 {
-      font-size: 1.4rem;
-      margin: 0;
-    }
+      a:hover {
+        @extend %link-hover;
+      }
+  
+      h1 {
+        font-size: 1.4rem;
+        margin: 0;
+      } 
 
-    .post-meta {
-      i {
-        font-size: 0.73rem;
-
-        &:not(:first-child) {
-          margin-left: 1.2rem;
+      .post-meta {
+        i {
+          font-size: 0.73rem;
+  
+          &:not(:first-child) {
+            margin-left: 1.2rem;
+          }
+        }
+  
+        em {
+          @extend %normal-font-style;
         }
       }
-
-      em {
-        @extend %normal-font-style;
+  
+      .post-content {
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+        color: var(--post-list-text-color);
+  
+        > p {
+          /* Make preview shorter on the homepage */
+          margin: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+      }
+  
+      .pin {
+        > i {
+          transform: rotate(45deg);
+          padding-left: 3px;
+          color: var(--pin-color);
+        }
+  
+        > span {
+          display: none;
+        }
       }
     }
 
-    .post-content {
-      margin-top: 0.6rem;
-      margin-bottom: 0.6rem;
-      color: var(--post-list-text-color);
+    .post-thumbnail{
+      display: table-cell;
+      position: relative;
+      width: 30%;
+      vertical-align: top;
 
-      > p {
-        /* Make preview shorter on the homepage */
-        margin: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
+      > img {
+        width: 100%;
       }
-    }
-
-    .pin {
-      > i {
-        transform: rotate(45deg);
-        padding-left: 3px;
-        color: var(--pin-color);
-      }
-
-      > span {
-        display: none;
-      }
-    }
+    } 
 
   } // .post-preview
 } // #post-list

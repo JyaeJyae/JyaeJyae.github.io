@@ -57,48 +57,55 @@ layout: page
   {% assign last = many | minus: 1 %}
   {% capture _category_url %}/categories/{{ post.categories[last] | slugify | url_encode }}/{% endcapture %}
   <div class="post-preview">
-    <h1>
-      <a href="{{ _category_url | relative_url }}"><span style="color:rgb(218, 139, 139);">{{ post.categories[last] }} › </span></a>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        {% include no-linenos.html content=post.content %}
-        {{ content | markdownify | strip_html | truncate: 200 | escape }}
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        {% include datetime.html date=post.date %}
-
-        <!-- categories -->
-        {% if post.categories.size > 0 %}
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          {% for category in post.categories %}
-            {{ category }}
-            {%- unless forloop.last -%},{%- endunless -%}
-          {% endfor %}
-          </span>
+    <div class="post-info">
+      <h1>
+        <a href="{{ _category_url | relative_url }}"><span style="color:rgb(218, 139, 139);">{{ post.categories[last] }} › </span></a>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h1>
+  
+      <div class="post-content">
+        <p>
+          {% include no-linenos.html content=post.content %}
+          {{ content | markdownify | strip_html | truncate: 200 | escape }}
+        </p>
+      </div>
+  
+      <div class="post-meta text-muted d-flex">
+        <div class="mr-auto">
+  
+          <!-- posted date -->
+          <i class="far fa-calendar fa-fw"></i>
+          {% include datetime.html date=post.date %}
+  
+          <!-- categories -->
+          {% if post.categories.size > 0 %}
+            <i class="far fa-folder-open fa-fw"></i>
+            <span>
+            {% for category in post.categories %}
+              {{ category }}
+              {%- unless forloop.last -%},{%- endunless -%}
+            {% endfor %}
+            </span>
+          {% endif %}
+  
+        </div>
+  
+        {% if post.pin %}
+        <div class="pin">
+          <i class="fas fa-thumbtack fa-fw"></i>
+          <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
+        </div>
         {% endif %}
-
-      </div>
-
-      {% if post.pin %}
-      <div class="pin">
-        <i class="fas fa-thumbtack fa-fw"></i>
-        <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
-      </div>
-      {% endif %}
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
+  
+      </div> <!-- .post-meta -->
+  
+    </div>
+    <div class="post-thumbnail">
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.image.path  }}"/>
+      </a>
+    </div>
+  </div> <!-- .post-preview -->
 
 {% endfor %}
 

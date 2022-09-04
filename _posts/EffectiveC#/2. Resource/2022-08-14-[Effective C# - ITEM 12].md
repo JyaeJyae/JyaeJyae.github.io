@@ -1,8 +1,13 @@
 ---
-title: EFC# ITEM 12. 할당 구문보다 멤버 초기화 구문이 좋다
+title: EFC# ITEM 12. 할당 구문보다 멤버 초기화 구문이 좋다.
 date: 2022-08-14 20:50:32 +0900
 categories: [Effective C#]
 tags: [c#]
+image:
+  path: /assets/img/thumbnail/EffectiveCSharp/12.jpg
+  width: 1000   # in pixels
+  height: 400   # in pixels
+  alt: EFC# ITEM 12. 할당 구문보다 멤버 초기화 구문이 좋다.
 ---
 
 
@@ -29,7 +34,7 @@ public class MyClass
 - 베이스 클래스의 생성자가 호출되기 전에 초기화된다.
 - 멤버 변수의 초기화 순서는 변수 선언 순서이다.
 
-### ✅ 멤버 초기화 구문을 사용하지 않아야 할 경우
+## ✅ 멤버 초기화 구문을 사용하지 않아야 할 경우
 1. 0이나 null로 초기화하는 경우 (기본 초기화 루틴과 같기 때문)
 2. 동일한 객체를 반복해서 초기화하는 경우 (객체가 두번 생성되어 가비지가 발생한다)
 3. 예외 처리가 반드시 필요한 경우 (멤버 초기화 구문은 try로 감쌀 수 없다)
