@@ -7,7 +7,6 @@ image:
   path: /assets/img/thumbnail/EffectiveCSharp/ch3.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
-  alt: EFC# ITEM 26. 제네릭 인터페이스와 논제네릭 인터페이스를 함께 구현하라.
 ---
 
 새로운 라이브러리를 개발할 때 제네릭 타입뿐 아니라 고전적인 방식도 함께 지원한다면 라이브러리의 활용도를 좀 더 높일 수 있다.

@@ -7,7 +7,6 @@ image:
   path: /assets/img/thumbnail/EffectiveCSharp/ch3.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
-  alt: EFC# ITEM 24. 베이스 클래스나 인터페이스에 대해서 제네릭을 특화하지 말라.
 ---
 
 제네릭과 함께 여러 개의 오버로드된 메서드가 있는 경우, 컴파일러가 이 중 하나를 어떻게 선택하는지 정확히 알고 있어야한다. 

@@ -7,7 +7,6 @@ image:
   path: /assets/img/thumbnail/EffectiveCSharp/ch3.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
-  alt: EFC# ITEM 21. 타입 매개변수가 IDisposable을 구현한 경우를 대비하여 제네릭 클래스를 작성하라.
 ---
 
 > 👉 제약 조건의 역할

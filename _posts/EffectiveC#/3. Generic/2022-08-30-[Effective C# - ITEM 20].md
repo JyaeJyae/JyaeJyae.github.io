@@ -7,7 +7,6 @@ image:
   path: /assets/img/thumbnail/EffectiveCSharp/ch3.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
-  alt: EFC# ITEM 20. IComparable<T>와 IComparer<T>를 이용하여 객체의 선후 관계를 정의하라.
 ---
 
 .NET Framework는 객체의 선후 관계를 정의하기 위해서 `IComparable<T>`와 `IComparer<T>` 2개의 인터페이스를 제공한다.

@@ -7,7 +7,6 @@ image:
   path: /assets/img/thumbnail/EffectiveCSharp/ch3.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
-  alt: EFC# ITEM 22. 공변성과 반공변성을 지원하라.
 ---
 
 타입의 가변성(variance), 즉 `공변(convariance)`과 `반공변(contravariance)`은 특정 타입의 객체를 다른 타입 객체로 변환할 수 있는 성격을 말한다. 

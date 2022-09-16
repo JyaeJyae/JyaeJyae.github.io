@@ -7,7 +7,6 @@ image:
   path: /assets/img/thumbnail/EffectiveCSharp/ch2.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
-  alt: EFC# ITEM 17. 표준 Dispose 패턴을 구현하라.
 ---
 
 

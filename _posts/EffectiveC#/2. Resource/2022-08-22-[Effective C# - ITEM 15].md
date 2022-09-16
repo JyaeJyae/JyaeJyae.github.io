@@ -7,7 +7,6 @@ image:
   path: /assets/img/thumbnail/EffectiveCSharp/ch2.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
-  alt: EFC# ITEM 15. 불필요한 객체를 만들지 말라.
 ---
 
 
