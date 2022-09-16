@@ -3,6 +3,11 @@ title: EFC# ITEM 19. 런타임에 타입을 확인하여 최적의 알고리즘�
 date: 2022-08-28 20:50:55 +0900
 categories: [Effective C#]
 tags: [c#]
+image:
+  path: /assets/img/thumbnail/EffectiveCSharp/3장.jpg
+  width: 1000   # in pixels
+  height: 400   # in pixels
+  alt: EFC# ITEM 19. 런타임에 타입을 확인하여 최적의 알고리즘을 사용하라.
 ---
 
 제네릭을 활용하면 공동 메서드를 작성할 수 있기 때문에 코드의 양이 줄어들어 유용하다.

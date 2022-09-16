@@ -1,8 +1,13 @@
 ---
-title: EFC# ITEM 18. 반드시 필요한 제약 조건만 설정하라
+title: EFC# ITEM 18. 반드시 필요한 제약 조건만 설정하라.
 date: 2022-08-25 20:36:32 +0900
 categories: [Effective C#]
 tags: [c#]
+image:
+  path: /assets/img/thumbnail/EffectiveCSharp/3장.jpg
+  width: 1000   # in pixels
+  height: 400   # in pixels
+  alt: EFC# ITEM 18. 반드시 필요한 제약 조건만 설정하라.
 ---
 
 `타입 매개변수에 대한 제약 조건(constraint)`은 클래스가 작업을 올바르게 수행하기 위해서 타입 매개변수로 전달할 수 있는 타입의 유형을 제한하는 방법이다.

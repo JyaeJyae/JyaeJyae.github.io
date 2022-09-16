@@ -3,6 +3,11 @@ title: EFC# ITEM 23. 타입 매개변수에 대해 메서드 제약 조건을 �
 date: 2022-09-03 22:31:55 +0900
 categories: [Effective C#]
 tags: [c#]
+image:
+  path: /assets/img/thumbnail/EffectiveCSharp/3장.jpg
+  width: 1000   # in pixels
+  height: 400   # in pixels
+  alt: EFC# ITEM 23. 타입 매개변수에 대해 메서드 제약 조건을 설정하려면 델리게이트를 활용하라.
 ---
 
 C#에서 제약 조건을 설정하는 방법에는 한계가 많다.

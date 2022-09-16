@@ -1,9 +1,14 @@
 ---
-title: EFC# ITEM 16. 생성자 내에서는 절대로 가상 함수를 호출하지 말라
+title: EFC# ITEM 16. 생성자 내에서는 절대로 가상 함수를 호출하지 말라.
 date: 2022-08-23
 author: JyaeJyae
 categories: [Effective C#]
 tags: [c#]
+image:
+  path: /assets/img/thumbnail/EffectiveCSharp/2장.jpg
+  width: 1000   # in pixels
+  height: 400   # in pixels
+  alt: EFC# ITEM 16. 생성자 내에서는 절대로 가상 함수를 호출하지 말라.
 ---
 
 - 객체가 완전히 생성되기 이전에 가상 함수를 호출하면 이상 동작을 일으킨다.

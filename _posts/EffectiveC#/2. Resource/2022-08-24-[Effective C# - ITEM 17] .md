@@ -1,8 +1,13 @@
 ---
-title: EFC# ITEM 17. 표준 Dispose 패턴을 구현하라
+title: EFC# ITEM 17. 표준 Dispose 패턴을 구현하라.
 date: 2022-08-24 19:39:53 +0900
 categories: [Effective C#]
 tags: [c#]
+image:
+  path: /assets/img/thumbnail/EffectiveCSharp/2장.jpg
+  width: 1000   # in pixels
+  height: 400   # in pixels
+  alt: EFC# ITEM 17. 표준 Dispose 패턴을 구현하라.
 ---
 
 

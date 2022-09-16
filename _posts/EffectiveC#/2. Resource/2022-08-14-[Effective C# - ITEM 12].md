@@ -4,7 +4,7 @@ date: 2022-08-14 20:50:32 +0900
 categories: [Effective C#]
 tags: [c#]
 image:
-  path: /assets/img/thumbnail/EffectiveCSharp/12.jpg
+  path: /assets/img/thumbnail/EffectiveCSharp/2장.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
   alt: EFC# ITEM 12. 할당 구문보다 멤버 초기화 구문이 좋다.
