@@ -4,7 +4,7 @@ date: 2022-09-03 21:38:55 +0900
 categories: [Effective C#]
 tags: [c#]
 image:
-  path: /assets/img/thumbnail/EffectiveCSharp/3장.jpg
+  path: /assets/img/thumbnail/EffectiveCSharp/ch3.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
   alt: EFC# ITEM 24. 베이스 클래스나 인터페이스에 대해서 제네릭을 특화하지 말라.

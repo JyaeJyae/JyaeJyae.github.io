@@ -4,7 +4,7 @@ date: 2022-09-16 21:00:55 +0900
 categories: [Effective C#]
 tags: [c#]
 image:
-  path: /assets/img/thumbnail/EffectiveCSharp/3장.jpg
+  path: /assets/img/thumbnail/EffectiveCSharp/ch3.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
   alt: EFC# ITEM 26. 제네릭 인터페이스와 논제네릭 인터페이스를 함께 구현하라.

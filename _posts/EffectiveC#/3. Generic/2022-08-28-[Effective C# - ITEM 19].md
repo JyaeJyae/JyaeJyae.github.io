@@ -4,7 +4,7 @@ date: 2022-08-28 20:50:55 +0900
 categories: [Effective C#]
 tags: [c#]
 image:
-  path: /assets/img/thumbnail/EffectiveCSharp/3장.jpg
+  path: /assets/img/thumbnail/EffectiveCSharp/ch3.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
   alt: EFC# ITEM 19. 런타임에 타입을 확인하여 최적의 알고리즘을 사용하라.

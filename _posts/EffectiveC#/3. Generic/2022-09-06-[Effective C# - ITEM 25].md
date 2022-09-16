@@ -4,7 +4,7 @@ date: 2022-09-06 20:48:55 +0900
 categories: [Effective C#]
 tags: [c#]
 image:
-  path: /assets/img/thumbnail/EffectiveCSharp/3장.jpg
+  path: /assets/img/thumbnail/EffectiveCSharp/ch3.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
   alt: EFC# ITEM 25. 타입 매개변수로 인스턴스 필드를 만들 필요가 없다면 제네릭 메서드를 정의하라.

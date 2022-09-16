@@ -4,7 +4,7 @@ date: 2022-08-22 20:50:32 +0900
 categories: [Effective C#]
 tags: [c#]
 image:
-  path: /assets/img/thumbnail/EffectiveCSharp/2장.jpg
+  path: /assets/img/thumbnail/EffectiveCSharp/ch2.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
   alt: EFC# ITEM 15. 불필요한 객체를 만들지 말라.

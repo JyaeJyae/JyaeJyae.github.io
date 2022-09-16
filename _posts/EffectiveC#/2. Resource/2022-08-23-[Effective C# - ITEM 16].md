@@ -5,7 +5,7 @@ author: JyaeJyae
 categories: [Effective C#]
 tags: [c#]
 image:
-  path: /assets/img/thumbnail/EffectiveCSharp/2장.jpg
+  path: /assets/img/thumbnail/EffectiveCSharp/ch2.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
   alt: EFC# ITEM 16. 생성자 내에서는 절대로 가상 함수를 호출하지 말라.
