@@ -7,6 +7,7 @@ image:
   path: /assets/img/thumbnail/EffectiveCSharp/ch4.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
+  alt: EFC# ITEM 38. 메서드보다 람다 표현식이 낫다.
 ---
 
 ## ✅ 람다 표현식 동일 코드 반복
