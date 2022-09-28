@@ -34,7 +34,7 @@ tail_includes:
     {% endcapture %}
 
     <div class="mt-3 mb-3">
-      <img src="{{ site.baseurl }}/{{ page.image.path }}" class="preview-img {{ bg | strip }}" alt="Preview Image"
+      <img src="{{ page.image.path }}" class="preview-img {{ bg | strip }}" alt="Preview Image"
 
       {% if page.image.width %}
         width="{{ page.image.width }}"
