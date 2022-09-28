@@ -4,7 +4,7 @@ date: 2022-09-28 21:04:24 +0900
 categories: [Effective C#]
 tags: [c#]
 image:
-  path: /thumbnail/EffectiveCSharp/ch4.jpg
+  path: img/thumbnail/EffectiveCSharp/ch4.jpg
   width: 1000   # in pixels
   height: 400   # in pixels
   alt: EFC# ITEM 38. 메서드보다 람다 표현식이 낫다.
