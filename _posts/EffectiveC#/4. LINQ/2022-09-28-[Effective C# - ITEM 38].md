@@ -44,6 +44,8 @@ var earlyFolks = from e in allEmployees
                   select e;
 ```
 - 좀 단순해진 것 같지만, 분리된 메서드는 재사용될 가능성이 현저히 낫다.
+
+
 ```csharp
 private static IQueryable<Employee> LowPaidSalariedFilter
     (this IQueryable<Employee> sequence) =>
